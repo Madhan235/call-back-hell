@@ -1,56 +1,88 @@
-var count_10 = ()=>{
-    var call_count = document.querySelector('.count');
- call_count.textContent = '10';
+var count_10 = () => {
+    setTimeout(() => {
+        var call_count = document.querySelector('.count');
+        call_count.textContent = '10';
+        count_9();
+    }, 1000);
 };
-// call_count.style.display = 'none';
-var count_9 = ()=>{
-    var call_count = document.querySelector('.count');
-    call_count.textContent = '9';
-}
-var count_8 = ()=>{
-    var call_count = document.querySelector('.count');
-    call_count.textContent = '8';
-}
-var count_7 = ()=>{
-    var call_count = document.querySelector('.count');
-    call_count.textContent = '7';
-}
-var count_6 = ()=>{
-    var call_count = document.querySelector('.count');
-    call_count.textContent = '6';
-}
-var count_5 = ()=>{
-    var call_count = document.querySelector('.count');
-    call_count.textContent = '5';
-}
-var count_4 = ()=>{
-    var call_count = document.querySelector('.count');
-    call_count.textContent = '4';
-}
-var count_3 = ()=>{
-    var call_count = document.querySelector('.count');
-    call_count.textContent = '3';
-}
-var count_2 = ()=>{
-    var call_count = document.querySelector('.count');
-    call_count.textContent = '2';
-}
-var count_1 = ()=>{
-    var call_count = document.querySelector('.count');
-    call_count.textContent = '1';
-}
-var final_text = ()=>{
- var wish = document.querySelector('.count');
-wish.textContent = 'HAPPY INDEPENDENCE DAY ALL !'
-}
-setTimeout(count_10,1000)
-setTimeout(count_9,2000)
-setTimeout(count_8,3000)
-setTimeout(count_7,4000)
-setTimeout(count_6,5000)
-setTimeout(count_5,6000)
-setTimeout(count_4,7000)
-setTimeout(count_3,8000)
-setTimeout(count_2,9000)
-setTimeout(count_1,10000)
-setTimeout(final_text,11000)
+
+var count_9 = () => {
+    setTimeout(() => {
+        var call_count = document.querySelector('.count');
+        call_count.textContent = '9';
+        count_8();
+    }, 1000);
+};
+
+var count_8 = () => {
+    setTimeout(() => {
+        var call_count = document.querySelector('.count');
+        call_count.textContent = '8';
+        count_7();
+    }, 1000);
+};
+
+var count_7 = () => {
+    setTimeout(() => {
+        var call_count = document.querySelector('.count');
+        call_count.textContent = '7';
+        count_6();
+    }, 1000);
+};
+
+var count_6 = () => {
+    setTimeout(() => {
+        var call_count = document.querySelector('.count');
+        call_count.textContent = '6';
+        count_5();
+    }, 1000);
+};
+
+var count_5 = () => {
+    setTimeout(() => {
+        var call_count = document.querySelector('.count');
+        call_count.textContent = '5';
+        count_4();
+    }, 1000);
+};
+
+var count_4 = () => {
+    setTimeout(() => {
+        var call_count = document.querySelector('.count');
+        call_count.textContent = '4';
+        count_3();
+    }, 1000);
+};
+
+var count_3 = () => {
+    setTimeout(() => {
+        var call_count = document.querySelector('.count');
+        call_count.textContent = '3';
+        count_2();
+    }, 1000);
+};
+
+var count_2 = () => {
+    setTimeout(() => {
+        var call_count = document.querySelector('.count');
+        call_count.textContent = '2';
+        count_1();
+    }, 1000);
+};
+
+var count_1 = () => {
+    setTimeout(() => {
+        var call_count = document.querySelector('.count');
+        call_count.textContent = '1';
+        final_text();
+    }, 1000);
+};
+
+var final_text = () => {
+    setTimeout(() => {
+        var wish = document.querySelector('.count');
+        wish.textContent = 'HAPPY INDEPENDENCE DAY ALL !';
+    }, 1000);
+};
+
+count_10();
